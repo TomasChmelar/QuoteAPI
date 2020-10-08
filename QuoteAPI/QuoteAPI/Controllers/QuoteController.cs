@@ -13,18 +13,9 @@ namespace QuoteAPI.Controllers
     [ApiController]
     public class QuoteController : ControllerBase
     {
-        // GET: api/<QuoteController>
+        // GET api/<QuoteController>
+        // get random quote
         [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<QuoteController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)// GET api/<QuoteController>
-// get random quote
-[HttpGet]
         public ActionResult<Quote> Get() { }
         // POST api/<QuoteController>
         // insert new quote (without tags)
@@ -37,7 +28,7 @@ namespace QuoteAPI.Controllers
         // DELETE api/<QuoteController>/5
         // delete quote with id 5
         [HttpDelete("{id?}")]
-        public IActionResult<Quote> Delete(int id) { }
+        public ActionResult<Quote> Delete(int id) { }
         // POST api/<QuoteController/5/tags>
         // link new tags with quote 5
         [HttpPost("{id}/tags")]
@@ -46,26 +37,5 @@ namespace QuoteAPI.Controllers
         // get linked tags with quote 5
         [HttpGet("{id}/tags")]
         public ActionResult<IEnumerable<Tag>> GetTags(int id) { }
-        {
-            return "value";
-        }
-
-        // POST api/<QuoteController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<QuoteController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<QuoteController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

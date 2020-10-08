@@ -11,9 +11,9 @@ namespace QuoteAPI.Models
     {
         [Key]
         public int TagId { get; set; }
-        [ForeignKey("Quote")]
-        public int QuoteId { get; set; }
         public string Name { get; set; }
         public Category Category { get; set; }
+        [NotMapped]
+        public ICollection<TagQuote> TagQuotes { get; set; }
     }
 }
