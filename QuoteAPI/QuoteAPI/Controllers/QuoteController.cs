@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using QuoteAPI.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -13,29 +14,57 @@ namespace QuoteAPI.Controllers
     [ApiController]
     public class QuoteController : ControllerBase
     {
-        // GET api/<QuoteController>
-        // get random quote
+        private readonly ApplicationDbContext _context;
+
+        public QuoteController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
         [HttpGet]
-        public ActionResult<Quote> Get() { }
-        // POST api/<QuoteController>
-        // insert new quote (without tags)
+        public async Task<ActionResult<IEnumerable<Quote>>> GetQuote() 
+        {
+            return await _context.Quotes.ToListAsync();
+        }
         [HttpPost]
-        public ActionResult<Quote> Insert([FromBody] Quote value) { }
-        // GET api/<QuoteController/5>
-        // get quote with id 5
+        public async Task<ActionResult<Quote>> InsertQuote([FromBody] Quote value)
+        {
+            //nechápu
+        }
         [HttpGet("{id}")]
-        public ActionResult<Quote> Get(int id) { }
-        // DELETE api/<QuoteController>/5
-        // delete quote with id 5
+        public async Task<ActionResult<Quote>> GetQuote(int id) 
+        {
+            var quote = await _context.Quotes.FindAsync(id);
+
+            if (quote == null)
+            {
+                return NotFound();
+            }
+
+            return quote;
+        }
         [HttpDelete("{id?}")]
-        public ActionResult<Quote> Delete(int id) { }
-        // POST api/<QuoteController/5/tags>
-        // link new tags with quote 5
+        public async Task<ActionResult<Quote>> DeleteQuote(int id) 
+        {
+            var quote = await _context.Quotes.FindAsync(id);
+            if (quote == null)
+            {
+                return NotFound();
+            }
+
+            _context.Quotes.Remove(quote);
+            await _context.SaveChangesAsync();
+
+            return quote;
+        }
         [HttpPost("{id}/tags")]
-        public ActionResult<IEnumerable<Tag>> Insert(int id, [FromBody] IEnumerable<int> tagIds) { }
-        // GET api/<QuoteController/5/tags>
-        // get linked tags with quote 5
+        public async Task<ActionResult<IEnumerable<Tag>>> InsertQuote(int id, [FromBody] IEnumerable<int> tagIds)
+        {
+            //nechápu
+        }
         [HttpGet("{id}/tags")]
-        public ActionResult<IEnumerable<Tag>> GetTags(int id) { }
+        public async Task<ActionResult<IEnumerable<Tag>>> GetTag(int id)
+        {
+            return await _context.Tags.ToListAsync();
+        }
     }
 }
