@@ -26,9 +26,12 @@ namespace QuoteAPI.Controllers
             return await _context.Quotes.ToListAsync();
         }
         [HttpPost]
-        public async Task<ActionResult<Quote>> InsertQuote([FromBody] Quote value)
+        public async Task<ActionResult<Quote>> PostQuote(int quote, Quote value)
         {
-            //nechápu
+            _context.Quotes.Add(value);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetQuote", new { quote = value.QuoteId }, quote);
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<Quote>> GetQuote(int id) 
@@ -57,9 +60,22 @@ namespace QuoteAPI.Controllers
             return quote;
         }
         [HttpPost("{id}/tags")]
-        public async Task<ActionResult<IEnumerable<Tag>>> InsertQuote(int id, [FromBody] IEnumerable<int> tagIds)
+        public async Task<ActionResult<IEnumerable<Tag>>> PostQuote(int id, [FromBody] IEnumerable<int> tagIds)
         {
-            //nechápu
+            IList<TagQuote> quoteTags = new List<TagQuote>();
+            foreach (var item in tagIds)
+            {
+                TagQuote newQuote = new TagQuote
+                {
+                    QuoteId = id,
+                    TagId = item
+                };
+                quoteTags.Add(newQuote);
+            }
+            _context.TagQuote.AddRange(quoteTags);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetTags", quoteTags);
         }
         [HttpGet("{id}/tags")]
         public async Task<ActionResult<IEnumerable<Tag>>> GetTag(int id)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OamrZmIYD06zlLQVT4CkQp3Rv7L7Bg3j9kk0ynNkKhZZ67E7doWOgzuib38AXRYWYVxvGLT1OBp2lf5r5U3LKg==",
+  "dgSpecHash": "utoMUojqzJ6drj/aOPWgpaTMMC9wzfyGAiUzEfeVF3b82JpHOpWnSUwaP9rjqHtGZgUL3K43PX1xWuktSvon6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomch\\Source\\Repos\\QuoteAPI\\QuoteAPI\\QuoteAPI\\QuoteAPI.csproj",
+  "projectFilePath": "C:\\Users\\tomch\\Source\\Repos\\QuoteAPI2\\QuoteAPI\\QuoteAPI\\QuoteAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tomch\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.8\\microsoft.aspnetcore.cryptography.internal.3.1.8.nupkg.sha512",
     "C:\\Users\\tomch\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.8\\microsoft.aspnetcore.cryptography.keyderivation.3.1.8.nupkg.sha512",

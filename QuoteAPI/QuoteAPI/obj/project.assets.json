@@ -2414,11 +2414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomch\\Source\\Repos\\QuoteAPI\\QuoteAPI\\QuoteAPI\\QuoteAPI.csproj",
+      "projectUniqueName": "C:\\Users\\tomch\\Source\\Repos\\QuoteAPI2\\QuoteAPI\\QuoteAPI\\QuoteAPI.csproj",
       "projectName": "QuoteAPI",
-      "projectPath": "C:\\Users\\tomch\\Source\\Repos\\QuoteAPI\\QuoteAPI\\QuoteAPI\\QuoteAPI.csproj",
+      "projectPath": "C:\\Users\\tomch\\Source\\Repos\\QuoteAPI2\\QuoteAPI\\QuoteAPI\\QuoteAPI.csproj",
       "packagesPath": "C:\\Users\\tomch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomch\\Source\\Repos\\QuoteAPI\\QuoteAPI\\QuoteAPI\\obj\\",
+      "outputPath": "C:\\Users\\tomch\\Source\\Repos\\QuoteAPI2\\QuoteAPI\\QuoteAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
