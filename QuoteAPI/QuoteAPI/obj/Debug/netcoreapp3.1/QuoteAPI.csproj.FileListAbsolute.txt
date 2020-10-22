@@ -256,3 +256,17 @@ C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\obj\Debug\netcoreapp3.1\
 C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\obj\Debug\netcoreapp3.1\QuoteAPI.dll
 C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\obj\Debug\netcoreapp3.1\QuoteAPI.pdb
 C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\obj\Debug\netcoreapp3.1\QuoteAPI.genruntimeconfig.cache
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\obj\Debug\netcoreapp3.1\QuoteAPI.csproj.CoreCompileInputs.cache
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\obj\Debug\netcoreapp3.1\QuoteAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\tomch\Source\Repos\QuoteAPI3\QuoteAPI\QuoteAPI\obj\Debug\netcoreapp3.1\QuoteAPI.MvcApplicationPartsAssemblyInfo.cache

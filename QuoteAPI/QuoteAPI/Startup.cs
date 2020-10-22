@@ -30,7 +30,7 @@ namespace QuoteAPI
             {
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
             });
-
+            services.AddSwaggerGen();
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -57,6 +57,11 @@ namespace QuoteAPI
 
             app.UseAuthorization();
             app.UseAuthentication();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "EndPoint Documentation");
+            });
 
             app.UseEndpoints(endpoints =>
             {

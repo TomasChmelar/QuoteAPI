@@ -68,7 +68,7 @@ namespace QuoteAPI.Controllers
 
             return quote;
         }
-        [HttpPost("{id}/tags")]
+        [HttpPost("{id}")]
         public async Task<ActionResult<IEnumerable<Tag>>> PostQuote(int id, [FromBody] IEnumerable<int> tagIds)
         {
             IList<TagQuote> quoteTags = new List<TagQuote>();
